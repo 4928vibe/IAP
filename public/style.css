@@ -1,0 +1,45 @@
+body {
+  font-family: 'Pretendard', sans-serif;
+
+  background-color: #fffef6;
+  margin: 0;
+  padding: 2em;
+  text-align: center;
+}
+
+
+/* public/style.css 등에서 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+}
+
+
+
+h1 {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.form-container {
+  margin-bottom: 1em;
+}
+
+#wordInput, #emailInput {
+  font-size: 15px;
+  padding: 0.5em;
+  width: 250px;
+  margin-bottom: 5px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+#submitWord {
+  font-size: 15px;
+  padding: 0.5em 1em;
+  margin-left: 0.5em;
+  font-family: 'Pretendard', sans-serif;
+}
+
+canvas {
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IAP_FINAL</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 2rem;
+    }
+    input, button {
+      padding: 10px;
+      margin: 0.5rem;
+      font-size: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    #canvas-container {
+      margin-top: 2rem;
+    }
+    #scoreDisplay {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+    #messageBox {
+      margin-top: 1rem;
+      color: green;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+  <input id="wordInput" type="text" placeholder="단어를 입력해주세요." />
+  <input id="emailInput" type="email" placeholder="이메일 주소를 작성해주세요. (선택)" />
+
+  <label>
+    <input type="checkbox" id="privacyCheck" />
+    <a href="https://your-notion-link.com" target="_blank">
+      이메일 주소를 입력할 경우 개인정보 이용 약관에 동의하게 됩니다.
+    </a>
+  </label>
+    <h5>1,000점을 달성할 경우, 작성하신 이메일로 최종 작품을 보내드려요.</h5>
+    <h5>참여 후 이 달의 주제를 확인해보세요!</h5>
+
+
+  <button id="submitWord">단어 조각 추가하기</button>
+
+  <div id="scoreDisplay">이용 점수 : 0점</div>
+  <div id="messageBox"></div>
+
+  <div id="canvas-container"></div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
